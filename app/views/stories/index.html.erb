@@ -1,0 +1,19 @@
+<h1>
+  TESTING TESTING BLAH BLAH
+  <hr>
+</h1>
+
+<u>Running Stories:</u>
+<ol>
+  <% @stories.not_done.each do |story| %>
+    <li> <%= link_to story.title, story_path(story.id) %></li>
+  <% end %>
+</ol>
+
+<u>Completed Stories:</u>
+<ol>
+  <% @stories.done.each do |story| %>
+    <li><%= link_to story.title, story_path(story.id) %></li>
+  <% end %>
+</ol>
+<%= link_to 'New Story', new_story_path() %>
