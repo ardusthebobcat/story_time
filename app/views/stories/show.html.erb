@@ -5,7 +5,10 @@ Title: <i style="font-size: 40px;"><%= @story.title %></i>
 <% end %>
 
 <% @story.sentences.each do |sentence| %>
-  <p><%= sentence.sentence %> -<%= sentence.author %> <%= link_to 'Edit', edit_story_sentence_path(@story.id, sentence.id) %></p>
+  <p><%= sentence.sentence %> -<%= sentence.author %> <%= link_to 'Edit', edit_story_sentence_path(@story.id, sentence.id) %>
+    <%= link_to "[x]", story_sentence_path(@story.id, sentence.id),
+                             :data => {:confirm => "Are you sure you want to delete this sentence? #yoloswag",
+                             :method => "delete"} %></p>
 <% end %>
 
 <%= link_to 'Home', stories_path %>

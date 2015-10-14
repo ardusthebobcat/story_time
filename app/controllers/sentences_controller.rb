@@ -37,6 +37,13 @@ class SentencesController < ApplicationController
     end
   end
 
+  def destroy
+    @story = Story.find(params[:story_id])
+    @sentence = @story.sentences.find(params[:id])
+    @sentence.destroy
+    redirect_to story_path(@story.id)
+  end
+
   private
   def sentence_params
     params.require(:sentence).permit(:sentence, :author, :image)
