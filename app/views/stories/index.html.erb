@@ -6,7 +6,8 @@
 <u>Running Stories:</u>
 <ol>
   <% @stories.not_done.each do |story| %>
-    <li> <%= link_to story.title, story_path(story.id) %></li>
+    <li> <%= link_to story.title, story_path(story.id) %> <%= link_to "Delete", story_path(story.id),
+                               :data => {:confirm => "Are you sure?",	                                                :method => "delete"} %></li>
   <% end %>
 </ol>
 
