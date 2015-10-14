@@ -6,15 +6,18 @@
 <u>Running Stories:</u>
 <ol>
   <% @stories.not_done.each do |story| %>
-    <li> <%= link_to story.title, story_path(story.id) %> <%= link_to "Delete", story_path(story.id),
-                               :data => {:confirm => "Are you sure?",	                                                :method => "delete"} %></li>
+    <li> <%= link_to story.title, story_path(story.id) %> - <%= link_to "Edit", edit_story_path(story.id) %> <%= link_to "[x]", story_path(story.id),
+                               :data => {:confirm => "Are you sure?",
+                               :method => "delete"} %></li>
   <% end %>
 </ol>
 
 <u>Completed Stories:</u>
 <ol>
   <% @stories.done.each do |story| %>
-    <li><%= link_to story.title, story_path(story.id) %></li>
+    <li><%= link_to story.title, story_path(story.id) %> - <%= link_to "[x]", story_path(story.id),
+                               :data => {:confirm => "Are you sure?",
+                               :method => "delete"} %></li>
   <% end %>
 </ol>
 <%= link_to 'New Story', new_story_path() %>

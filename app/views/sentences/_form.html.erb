@@ -1,0 +1,13 @@
+<%= form_for [@story, @sentence] do |form| %>
+<br>
+  <%= form.label :sentence %>
+  <%= form.text_field :sentence %>
+  <br>
+  <br>
+  <%= form.label :author %>
+  <%= form.text_field :author %>
+  <br>
+  <br>
+  <%= form.submit %>
+
+<% end %>

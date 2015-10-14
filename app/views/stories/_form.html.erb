@@ -1,8 +1,13 @@
 <%= form_for @story do |form| %>
-  <%= form.label :title %>
-  <%= form.text_field :title %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <br>
+    <%= form.label :done %>
+    <%= form.check_box :done %>
+  </div>
+  <br>
 
-  <%= form.check_box :done %>
   <%= form.submit %>
 
 <% end %>
