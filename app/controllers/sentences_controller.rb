@@ -9,7 +9,7 @@ class SentencesController < ApplicationController
     @story = Story.find(params[:story_id])
     @sentence = @story.sentences.new(sentence_params)
     if @sentence.save
-      redirect_to story_sentence_path(@story.id, @sentence.id)
+      redirect_to story_path(@story.id)
     else
       render :new
     end

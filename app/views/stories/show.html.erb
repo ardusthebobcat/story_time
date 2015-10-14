@@ -5,7 +5,7 @@ Title: <i style="font-size: 40px;"><%= @story.title %></i>
 <% end %>
 
 <% @story.sentences.each do |sentence| %>
-  <p><%= sentence.sentence %> <%= sentence.author %> <%= link_to 'Edit', edit_story_sentence_path(@story.id, sentence.id) %></p>
+  <p><%= sentence.sentence %> -<%= sentence.author %> <%= link_to 'Edit', edit_story_sentence_path(@story.id, sentence.id) %></p>
 <% end %>
 
 <%= link_to 'Home', stories_path %>
