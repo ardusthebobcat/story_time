@@ -1,14 +1,14 @@
-# Story Time
+Story Time
 
-##### View a list of ready-to-build stories and contribute to them one sentence at a time, 10/16/15
+View a list of ready-to-build stories and contribute to them one sentence at a time, 10/16/15
 
-#### By Michael Summers and Corrie Smith
+By Michael Summers and Corrie Smith
 
-## Description
+Description
 
 Users are able to view a list of ready-to-build stories and contribute to them one sentence at a time. Users also have the option to create stories of their own. When a user goes to add a new sentence, s/he is given a random image for inspiration. Stories are organized by whether they're complete or still in progress. Unwanted stories and sentences are able to be deleted by users. Users may also edit the name of a story or sentence if they so desire.
 
-## Setup
+Setup
 
 * git clone https://github.com/CorrieASmith/story_time
 * $ cd story_time
@@ -21,11 +21,11 @@ Users are able to view a list of ready-to-build stories and contribute to them o
 
 This application requires the Rails gem as well as postgres and the Rails server.
 
-## Technologies Used
+Technologies Used
 
 This application is written using Ruby on Rails. Some basic HTML and CSS (in the form of Bootstrap) were also used for styling and organizational purposes.
 
-### Legal
+Legal
 
 
 Copyright (c) 2015 Michael Summers & Corrie Smith
