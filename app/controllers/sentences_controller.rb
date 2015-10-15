@@ -2,7 +2,7 @@ class SentencesController < ApplicationController
   def new
     @story = Story.find(params[:story_id])
     @sentence = @story.sentences.new
-    random_number = rand(0..Image.all.length)
+    random_number = rand(1..Image.all.length)
     @image = Image.find(random_number)
     render :new
   end

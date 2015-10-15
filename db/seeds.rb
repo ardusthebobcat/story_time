@@ -1,10 +1,10 @@
 class Story < ActiveRecord::Base
 
-  stories = Story.create([{ title: 'I Became Broke From Shopping at Whole Foods: A Real Housewives Special', id: 1}])
-  stories = Story.create([{ title: "True Life: I'm Addicted to Poor Indentation", id: 2}])
-  stories = Story.create([{ title: 'Based on the Best-Selling Novel by John Green: A Mediocre Cis White Teenage Boy Scores a Date With His High School Crush Who Later Dies and So Does He', id: 3}])
-  stories = Story.create([{ title: 'Frozen By That Idiot: A Pixar Studios Film', id: 4}])
-  stories = Story.create([{ title: "I'm Buying Alcohol With My School Loans: A Documentary", id: 5}])
+  stories = Story.create([{ title: 'I Became Broke From Shopping at Whole Foods: A Real Housewives Special', id: 100000}])
+  stories = Story.create([{ title: "True Life: I'm Addicted to Poor Indentation", id: 200000}])
+  stories = Story.create([{ title: 'Based on the Best-Selling Novel by John Green: A Mediocre Cis White Teenage Boy Scores a Date With His High School Crush Who Later Dies and So Does He', id: 300000}])
+  stories = Story.create([{ title: 'Frozen By That Idiot: A Pixar Studios Film', id: 400000}])
+  stories = Story.create([{ title: "I'm Buying Alcohol With My School Loans: A Documentary", id: 500000}])
 
 end
 
@@ -25,11 +25,11 @@ end
 
 class Sentence < ActiveRecord::Base
 
-  sentences = Sentence.create([{ author: 'Eric', sentence: 'Once upon a time, I asked my mom to buy me sixteen pizzas from Whole Foods, and we are now homeless. The implications of this are endless.', story_id: 1 }])
-  sentences = Sentence.create([{ author: 'Stan', sentence: 'I have been practicing my coding for over one day and I simply cannot find the tab key on my keyboard so as to properly indent my code.', story_id: 2}])
-  sentences = Sentence.create([{ author: 'Kenny', sentence: 'Why are the teenagers in John Green novels so existential and poetic?', story_id: 3 }])
-  sentences = Sentence.create([{ author: 'Kyle', sentence: 'I learned something today.', story_id: 4 }])
-  sentences = Sentence.create([{ author: 'Fry', sentence: 'Bender also stole my SSD card.', story_id: 5 }])
+  sentences = Sentence.create([{ author: 'Eric', sentence: 'Once upon a time, I asked my mom to buy me sixteen pizzas from Whole Foods, and we are now homeless. The implications of this are endless.', story_id: 100000}])
+  sentences = Sentence.create([{ author: 'Stan', sentence: 'I have been practicing my coding for over one day and I simply cannot find the tab key on my keyboard so as to properly indent my code.', story_id: 200000}])
+  sentences = Sentence.create([{ author: 'Kenny', sentence: 'Why are the teenagers in John Green novels so existential and poetic?', story_id: 300000}])
+  sentences = Sentence.create([{ author: 'Kyle', sentence: 'I learned something today.', story_id: 400000}])
+  sentences = Sentence.create([{ author: 'Fry', sentence: 'Bender also stole my SSD card.', story_id: 500000 }])
 
 
 end
