@@ -4,6 +4,7 @@
 </h1>
 
 <u>Running Stories:</u>
+<br><br>
 <ol>
   <% @stories.not_done.each do |story| %>
     <li> <%= link_to story.title, story_path(story.id) %> - <%= link_to "Edit", edit_story_path(story.id) %>
@@ -13,7 +14,10 @@
   <% end %>
 </ol>
 
+<br><br>
+
 <u>Completed Stories:</u>
+<br><br>
 <ol>
   <% @stories.done.each do |story| %>
     <li><%= link_to story.title, story_path(story.id) %> - <%= link_to "[x]", story_path(story.id),
@@ -21,4 +25,6 @@
                                :method => "delete"} %></li>
   <% end %>
 </ol>
+
+<br><br>
 <%= link_to 'New Story', new_story_path() %>
