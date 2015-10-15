@@ -1,28 +1,51 @@
-== README
+# _Story Time_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### _View a list of ready-to-build stories and contribute to them one sentence at a time, 10/16/15_
 
-Things you may want to cover:
+#### By _**Michael Summers and Corrie Smith**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_Users are able to view a list of ready-to-build stories and contribute to them one sentence at a time. Users also have the option to create stories of their own. When a user goes to add a new sentence, s/he is given a random image for inspiration. Stories are organized by whether they're complete or still in progress. Unwanted stories and sentences are able to be deleted by users. Users may also edit the name of a story or sentence if they so desire._
 
-* Configuration
+## Setup
 
-* Database creation
+* _git clone https://github.com/CorrieASmith/story_time_
+* _$ cd story_time_
+* _$ postgres_
+* _rake db:create_
+* _rake db:migrate_
+* _rake db:test:prepare_
+* _rake db:seed_
+* _rails server_
 
-* Database initialization
+_This application requires the Rails gem as well as postgres and the Rails server._
 
-* How to run the test suite
+## Technologies Used
 
-* Services (job queues, cache servers, search engines, etc.)
+_This application is written using Ruby on Rails. Some basic HTML and CSS (in the form of Bootstrap) were also used for styling and organizational purposes._
 
-* Deployment instructions
-
-* ...
+### Legal
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Copyright (c) 2015 **_Michael Summers & Corrie Smith_**
+
+This software is licensed under the MIT license.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
