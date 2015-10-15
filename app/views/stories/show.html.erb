@@ -4,6 +4,10 @@ Title: <i style="font-size: 40px;"><%= @story.title %></i>
   Status: Complete
 <% end %>
 
+<% @story.sentences.each do |sentence |%>
+  <%= sentence.sentence %>
+<% end %>
+<br><br>
 <% @story.sentences.each do |sentence| %>
   <p><%= sentence.sentence %> -<%= sentence.author %> <%= link_to 'Edit', edit_story_sentence_path(@story.id, sentence.id) %>
     <%= link_to "[x]", story_sentence_path(@story.id, sentence.id),
