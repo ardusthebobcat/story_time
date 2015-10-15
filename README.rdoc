@@ -2,7 +2,7 @@
 
 ##### _View a list of ready-to-build stories and contribute to them one sentence at a time, 10/16/15_
 
-#### By _**Michael Summers and Corrie Smith**_
+#### By _Michael Summers and Corrie Smith_
 
 ## Description
 
@@ -28,7 +28,7 @@ _This application is written using Ruby on Rails. Some basic HTML and CSS (in th
 ### Legal
 
 
-Copyright (c) 2015 **_Michael Summers & Corrie Smith_**
+Copyright (c) 2015 _Michael Summers & Corrie Smith_
 
 This software is licensed under the MIT license.
 
